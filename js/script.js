@@ -69,7 +69,7 @@ for(let i = 0; i < team.length; i++) {
         <li>
             <h3>${thisPerson.name}</h3>
             <h5>${thisPerson.role}</h5>
-            <h5>${thisPerson.image}</h5>
+            <img src="img/${thisPerson.image}"></img>
         </li>
     `;
 
