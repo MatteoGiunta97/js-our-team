@@ -63,7 +63,18 @@ const cards = document.querySelector('.ms-cards');
 for(let i = 0; i < team.length; i++) {
     const thisPerson = team[i];
     console.log(`${thisPerson.name} ${thisPerson.role} ${thisPerson.image}`);
+
+    // creo il template per ogni oggetto/card
+    const newCard = `
+        <li>
+            <h3>${thisPerson.name}</h3>
+            <h5>${thisPerson.role}</h5>
+            <h5>${thisPerson.image}</h5>
+        </li>
+    `;
+
+    // inserisco gli elementi dell'array nel DOM tramite template
+    cards.innerHTML += newCard;
+    
 }
 
-// inserisco l'array nel DOM
-cards.innerHTML = team;
