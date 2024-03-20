@@ -20,8 +20,8 @@ E ricordiamoci che console.log() è nostro amico!
 */
 
 
-
-const staff = [
+// creo l'array di oggetti
+const team = [
     {
         name: 'Wayne Barnet',
         role: 'Founder & CEO',
@@ -54,4 +54,16 @@ const staff = [
     }
 ];
 
-console.log(staff)
+console.log(team)
+
+// seleziono gli elementi nel DOM 
+const cards = document.querySelector('.ms-cards');
+
+// ciclo gli elementi dell'array e gli stampo su console
+for(let i = 0; i < team.length; i++) {
+    const thisPerson = team[i];
+    console.log(`${thisPerson.name} ${thisPerson.role} ${thisPerson.image}`);
+}
+
+// inserisco l'array nel DOM
+cards.innerHTML = team;
