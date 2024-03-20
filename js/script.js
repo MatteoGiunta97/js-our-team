@@ -66,7 +66,7 @@ for(let i = 0; i < team.length; i++) {
 
     // creo il template per ogni oggetto/card
     const newCard = `
-        <li>
+        <li class="mb-4">
             <h3>${thisPerson.name}</h3>
             <h5>${thisPerson.role}</h5>
             <img src="img/${thisPerson.image}"></img>
